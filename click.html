@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Button OnClick Method</title>
+</head>
+<body>
+    <div class="container">
+    <h2>JavaScript OnClick Method</h2>
+    <p id="onclick">HELLO</p>
+    <button onclick="setOnclick('Pravallika', 'Person1')">Person1</button>
+    <button onclick="setOnclick('Satya','Person2')">Person2</button>
+    
+</div>
+    <script>
+        let name1="pravali";
+        const name2="satya";
+        function setOnclick(name,id,value)
+        {
+        console.log('hello world');
+        const element=document.getElementById(id);
+        element.innerHTML="welcome"+name;
+        console.log(name2);
+        }
+        const element1=document.getElementsByClassName("hello");
+        console.log(element2);
+</script>
+</body>
+</html>

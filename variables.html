@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style
+    >.variable{
+        padding: 0;
+        width: 80%;
+        height: 50%;
+        border: 1px solid black;
+        text-align: center;
+        margin-left:80px;
+        background-color:paleturquoise;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="variable">
+    //Variables:
+    <h3>JavaScript Variables</h3>
+    <h4>Three Types Of Variables In JavaScript</h4>
+    <h4>var,let,const Three types of variables</h4>
+    <h2>About Var Keyword</h2>
+    <h4>Variable with Number</h4>
+    <p id="variable"></p>
+    <h4>Variable with String</h4>
+    <p id="name"></p>
+    <h4>In the above examples x,y,z,firstName,lastName,contactNumbers are variables using var keyword</h4>
+    <h4>variable with No Value</h4>
+    <p id="novalue"></p>
+    <h4>Variable with Single Statement</h4>
+    <p id="car"></p>
+    <h2>About Const Keyword</h2>
+    <h3>we will not change variable name and value in const keyword</h3>
+    <p id="const"></p>
+    <h2>About Let Keyword</h2>
+    <h3>We will change the Value  but not change the variable name</h3>
+  </div>
+    </div>
+    
+ <script>
+       var x=10;   //var keyword
+       var y=20;
+       var z=x+y;
+       document.getElementById("variable").innerHTML= "The Value of Z is +" + z;
+ </script>
+    <br>
+ <script>
+       var firstName="pravali";
+       var lastName="satya";
+       var contactNumber=9381454162;
+       document.getElementById("name").innerHTML = firstName + "" + lastName + "<br>" + contactNumber;
+    </script>
+    <br>
+ <script>
+        var carName;
+      document.getElementById("novalue").innerHTML=carName;
+</script>
+       <br>
+
+    <script>
+        var carName= "Volvo", person="Benz", price=20000;
+        document.getElementById("car").innerHTML=carName +"<br>"+ person + "<br>" + price;
+    </script>
+    <br>
+
+<script>
+    const stuName={  //const keyword
+        firstName:"pravali",lastName:"stya",age:24,adress:"hyd"
+     };
+     document.getElementById("const").innerHTML=stuName.firstName+""+stuName.lastName;
+</script>
+<br>
+<script>
+    let num = 20; //let Keyword
+    { 
+        let num=50;
+        document.write("num inside the function="+num);
+
+    }
+    let num=60;
+    document.write("num outside the function="+num);
+   </script>
+    
+</body>
+</html>

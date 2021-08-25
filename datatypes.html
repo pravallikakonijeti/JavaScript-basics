@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .datatypes{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 1px solid black ;
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: chartreuse;
+        }
+    </style>
+    
+    </head>
+<body>
+    <div class="container">
+        <div class="datatypes">
+        <h2>String DataType</h2>
+        <h3>We Will Write Strings in Double Quotes and Single Quotes in JavaScript</h3>
+        <p id="string"></p>
+        <h2>Number DataType</h2>
+        <h3>We Will Write Numbers Using Number DtataType</h3>
+        <p id="number"></p>
+        <h2>Boolean DataType</h2>
+        <h3>Booleans can have only two values 1.TRUE,2.False</h3>
+        <p id="boolean"></p>
+        <h2>Undefined DataType</h2>
+        <h3>A variable without a value The type of variable is undefined</h3>
+        <p id="undefined"></p>
+        <h2>Null DataType</h2>
+        <h3>An empty string has both a legal value and a type</h3>
+        <p id ="null"></p>
+        <h2>Array DataType</h2>
+        <h3>JavaScript arrays are written with square brackets, Array items are separated by commas</h3>
+        <p id="array"></p>
+        <h2>Object Datatype</h2>
+        <h3>JavaScript objects are written with curly braces {},
+         Object properties are written as name:value pairs, separated by commas</h3>
+         <p id="object"></p>
+    </div>
+ </div>
+ //String
+  <script>
+      let a="Pravallika";//Double Quotes
+      let b='SatyaNarayana';//Single Quotes
+      let c="It's Ok";//Single Quotes Inside Double Quotes
+      let d="He is 'fine'";//Single Quotes Inside Double Quotes
+      let e='She is "beautiful"';//Double Quotes Inside Single Quotes
+      document.getElementById("string").innerHTML=a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e;
+ </script>
+ //Number
+ <script>
+ var x = 80.00;//written with decimals
+ var y = 46;//written without decimals
+ var z = 39.14;//written with decimals
+document.getElementById("number").innerHTML =x+"<br>"+y+"<br>"+z;
+ </script>
+ //Boolean
+  <script>
+      //Boolean 
+    var x1 = 80;
+    var y1= 80;
+    var z1= 39;
+   document.getElementById("boolean").innerHTML =(x1==y1)+ "<br>" +(x1==z1);
+</script>
+//Undefined
+<script>
+    var carName;//Undefined
+  document.getElementById("undefined").innerHTML=carName;
+   </script>
+   //Null
+   <script>
+    var myName="";//null value
+    document.getElementById("null").innerHTML="The value is:"+myName+"<br>"+"The type is:"+typeof myName;
+   </script>
+   //Array
+   <script>
+      const cities=["hyd","england","UK","US"];
+      document.getElementById("array").innerHTML=cities[0,1,2];
+   </script>
+   //Object
+   <script>
+       const stuName={
+           firstName:"pravali",lastName:"stya",age:24,adress:"hyd"
+        };
+        document.getElementById("object").innerHTML=stuName.firstName+""+stuName.lastName;
+
+    </script>
+
+</body>
+</html>

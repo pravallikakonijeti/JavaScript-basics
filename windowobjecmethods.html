@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box,Confirm</title>
+</head>
+<body>
+    <div class="container">
+    <h2>About Alert Box,Confirm</h2>
+    <h3>The alert() method displays an alert box with a specified message and an OK button.
+        An alert box is used for  want to make sure information comes from  the user</h3>
+    <p>click the button to display the alert box</p>
+    <h4>Click the button to display line-breaks in an alert box</h4>
+    <button onclick="myAlert()">Click It</button>//onclick event
+    <button onclick="myConfirm()">Try It</button>
+    <h3>The confirm() method displays a dialog box with a specified message, along with OK and Cancel button.
+   A confirm box is used if we want the user to verify or accept something.</h3>
+    <p id="confirm"></p>
+</div>
+    <script>
+        function myAlert(){
+            alert("Hello!I Am An Alert Box");//alert box message
+            alert("Hello\nHow r u");//line-breaks in an alert box
+            alert(location.hostname);//present hostname displayed
+        }
+    </script>
+    <script>
+        function myConfirm(){
+            var text;
+            var t=confirm("press the buttons");
+            if(t==true) {
+                text="You Pressed Ok";
+            }
+                else{
+                    text="You Pressed Cancle";
+                }
+              
+              document.getElementById("confirm").innerHTML=text;
+            }
+</script>
+</body>
+</html>

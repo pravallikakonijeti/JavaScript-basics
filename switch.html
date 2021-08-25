@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Method</title>
+</head>
+<body>
+    <h3>The prompt() method displays a dialog box that prompts the user for input.
+       A prompt box is used if you want the user to input a value before entering a page</h3>
+      <p id="drinks"></p>
+     <button onclick="myPrompt()">click button</button>
+    <script>
+        function myPrompt(){
+            var drinks;
+            var favDrink=prompt("My Favorite Cool Drink is","Maaza");
+            switch (favDrink){
+            case "cocola":
+                drinks = "cocola is good for your health";
+            break;
+            case "Maaza":
+               drinks = "Maaza is my favorite drink";
+            break;
+            case "sprite":
+               drinks = "Really? Are you sure the sprite is your favorite?";
+            break;
+            default:
+               drinks = "I have never see  that type of drink";
+  }
+  document.getElementById("drinks").innerHTML =drinks;
+}
+</script>
+</body>
+</html>
